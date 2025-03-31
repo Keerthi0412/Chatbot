@@ -33,4 +33,3 @@ if asyncio.get_event_loop().is_running():
     task = asyncio.create_task(get_wolfram_answer(question))  # Use create_task instead of asyncio.run()
 else:
     asyncio.run(get_wolfram_answer(question))  # Normal script execution
-
